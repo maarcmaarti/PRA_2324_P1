@@ -11,7 +11,6 @@ int main() {
     std::cout << "¿Vacía?: " << list.empty() << ", tamaño: " << list.size() << std::endl;
     std::cout << std::endl;
 
-    // Inserciones
     list.insert(0, 100);
     list.insert(1, 200);
     list.insert(0, 50);
@@ -22,12 +21,10 @@ int main() {
     std::cout << "¿Vacía?: " << list.empty() << ", tamaño: " << list.size() << std::endl;
     std::cout << std::endl;
 
-    // Comprobamos get y operador[]
     std::cout << "list.get(0) => " << list.get(0) << ", list[0] => " << list[0] << std::endl;
     std::cout << "list.get(3) => " << list.get(3) << ", list[3] => " << list[3] << std::endl;
     std::cout << std::endl;
 
-    // Eliminaciones
     int r;
     r = list.remove(3);
     std::cout << "remove(3) => " << r << std::endl;
@@ -42,7 +39,6 @@ int main() {
     std::cout << "¿Vacía?: " << list.empty() << ", tamaño: " << list.size() << std::endl;
     std::cout << std::endl;
 
-    // append y prepend
     list.append(300);
     list.prepend(25);
 
@@ -51,11 +47,9 @@ int main() {
     std::cout << "¿Vacía?: " << list.empty() << ", tamaño: " << list.size() << std::endl;
     std::cout << std::endl;
 
-    // Búsqueda
     std::cout << "search(300) => " << list.search(300) << std::endl;
     std::cout << "search(999) => " << list.search(999) << std::endl;
 
-    // Prueba de excepciones
     try {
         list.insert(-1, 999);
     } catch (std::out_of_range &e) {
