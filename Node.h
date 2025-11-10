@@ -16,7 +16,7 @@ public:
     }
 
     friend ostream& operator<<(ostream &out, const Node<T> &node) {
-        out << node.data;  // CORREGIDO: era node->data
+        out << node.data;
         return out;
     }
 };
